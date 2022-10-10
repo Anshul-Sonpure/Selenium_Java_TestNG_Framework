@@ -1,7 +1,6 @@
 
 # _Selenium_Java_TestNG_Framework with Extent Report_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Hi All, This is a Maven Project build on Selenium,Java,TestNG and implementing ExtentReport version 5.0.9. To Run the project clone the project update the Maven dependencies.Extent Report is generated in test-output/Reports folder.
 Screenshot are saved in seprate folder.
