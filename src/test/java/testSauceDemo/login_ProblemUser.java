@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pagefiles_SauceDemo.LoginPage;
 import testBase.testBase;
 import utililty.ReadProperties;
+import utililty.TakeSnap;
 
 public class login_ProblemUser extends testBase
 {
@@ -12,19 +13,22 @@ public class login_ProblemUser extends testBase
     public void login_Problem_User() throws Exception
     { 
         testBase.getDriver().get(ReadProperties.getData("saucedemo"));
-        
-        LoginPage loginpage = new LoginPage();
-       
-        Thread.sleep(2000);
-       
-        loginpage.sendUsername(ReadProperties.getData("problemuser"));
-        Thread.sleep(2000);
       
-        loginpage.sendPassword(ReadProperties.getData("Password"));
-        
+        LoginPage loginpage = new LoginPage();
+        test.get().info("Navigated to Url");
         Thread.sleep(2000);
-     
+        
+        loginpage.sendUsername(ReadProperties.getData("problemuser"));
+        test.get().info("Problem User Username Entered");
+        Thread.sleep(2000);
+       
+        loginpage.sendPassword(ReadProperties.getData("Password"));
+        test.get().info("Password Entered");
+        Thread.sleep(2000);
+        
         loginpage.Login();
+        test.get().info("Clicked on Login");
+        test.get().addScreenCaptureFromPath(TakeSnap.capturescreen("Login-Problem-User_"+timeStamp+".png"));
     }
 }
 

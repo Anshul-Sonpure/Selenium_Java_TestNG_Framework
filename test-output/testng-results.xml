@@ -1,141 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-16T14:24:42 IST" name="Suite" finished-at="2022-11-16T14:25:22 IST" duration-ms="40017">
+  <suite started-at="2022-11-16T18:28:24 IST" name="Suite" finished-at="2022-11-16T18:29:05 IST" duration-ms="41774">
     <groups>
     </groups>
-    <test started-at="2022-11-16T14:24:42 IST" name="TestSauceLabs" finished-at="2022-11-16T14:25:22 IST" duration-ms="40017">
+    <test started-at="2022-11-16T18:28:24 IST" name="TestSauceLabs" finished-at="2022-11-16T18:29:05 IST" duration-ms="41774">
       <class name="testSauceDemo.login_ProblemUser">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.login_ProblemUser@487db668]" started-at="2022-11-16T14:24:42 IST" name="Setup" finished-at="2022-11-16T14:24:44 IST" duration-ms="1975" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.login_ProblemUser@43f82e78]" started-at="2022-11-16T18:28:24 IST" name="Setup" finished-at="2022-11-16T18:28:26 IST" duration-ms="2137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login_Problem_User()[pri:1, instance:testSauceDemo.login_ProblemUser@487db668]" started-at="2022-11-16T14:24:44 IST" name="login_Problem_User" finished-at="2022-11-16T14:24:51 IST" duration-ms="7244" status="PASS">
+        <test-method signature="login_Problem_User()[pri:1, instance:testSauceDemo.login_ProblemUser@43f82e78]" started-at="2022-11-16T18:28:26 IST" name="login_Problem_User" finished-at="2022-11-16T18:28:34 IST" duration-ms="8132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_Problem_User -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.login_ProblemUser@487db668]" started-at="2022-11-16T14:24:51 IST" name="tearDown" finished-at="2022-11-16T14:24:51 IST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.login_ProblemUser@43f82e78]" started-at="2022-11-16T18:28:34 IST" name="tearDown" finished-at="2022-11-16T18:28:34 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testSauceDemo.login_ProblemUser -->
       <class name="testSauceDemo.performance_glitch_user">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.performance_glitch_user@22bac7bc]" started-at="2022-11-16T14:24:42 IST" name="Setup" finished-at="2022-11-16T14:24:44 IST" duration-ms="1975" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.performance_glitch_user@e8df99a]" started-at="2022-11-16T18:28:24 IST" name="Setup" finished-at="2022-11-16T18:28:26 IST" duration-ms="2120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login_glitch_User()[pri:1, instance:testSauceDemo.performance_glitch_user@22bac7bc]" started-at="2022-11-16T14:24:44 IST" name="login_glitch_User" finished-at="2022-11-16T14:24:56 IST" duration-ms="12255" status="PASS">
+        <test-method signature="login_glitch_User()[pri:1, instance:testSauceDemo.performance_glitch_user@e8df99a]" started-at="2022-11-16T18:28:26 IST" name="login_glitch_User" finished-at="2022-11-16T18:28:39 IST" duration-ms="13132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_glitch_User -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.performance_glitch_user@22bac7bc]" started-at="2022-11-16T14:24:56 IST" name="tearDown" finished-at="2022-11-16T14:24:56 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.performance_glitch_user@e8df99a]" started-at="2022-11-16T18:28:39 IST" name="tearDown" finished-at="2022-11-16T18:28:39 IST" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testSauceDemo.performance_glitch_user -->
       <class name="testSauceDemo.TestValidCompleteFlow">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.TestValidCompleteFlow@46944ca9]" started-at="2022-11-16T14:24:56 IST" name="Setup" finished-at="2022-11-16T14:24:57 IST" duration-ms="809" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.TestValidCompleteFlow@e54303]" started-at="2022-11-16T18:28:39 IST" name="Setup" finished-at="2022-11-16T18:28:40 IST" duration-ms="961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="validloginpage()[pri:1, instance:testSauceDemo.TestValidCompleteFlow@46944ca9]" started-at="2022-11-16T14:24:57 IST" name="validloginpage" finished-at="2022-11-16T14:25:04 IST" duration-ms="7114" status="PASS">
+        <test-method signature="validloginpage()[pri:1, instance:testSauceDemo.TestValidCompleteFlow@e54303]" started-at="2022-11-16T18:28:40 IST" name="validloginpage" finished-at="2022-11-16T18:28:47 IST" duration-ms="6910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validloginpage -->
-        <test-method signature="addProductToCart()[pri:2, instance:testSauceDemo.TestValidCompleteFlow@46944ca9]" started-at="2022-11-16T14:25:04 IST" name="addProductToCart" finished-at="2022-11-16T14:25:13 IST" duration-ms="8404" status="PASS">
+        <test-method signature="addProductToCart()[pri:2, instance:testSauceDemo.TestValidCompleteFlow@e54303]" started-at="2022-11-16T18:28:47 IST" name="addProductToCart" finished-at="2022-11-16T18:28:56 IST" duration-ms="8670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method signature="enterUserInfo()[pri:3, instance:testSauceDemo.TestValidCompleteFlow@46944ca9]" started-at="2022-11-16T14:25:13 IST" name="enterUserInfo" finished-at="2022-11-16T14:25:19 IST" duration-ms="6439" status="PASS">
+        <test-method signature="enterUserInfo()[pri:3, instance:testSauceDemo.TestValidCompleteFlow@e54303]" started-at="2022-11-16T18:28:56 IST" name="enterUserInfo" finished-at="2022-11-16T18:29:02 IST" duration-ms="6536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterUserInfo -->
-        <test-method signature="Checkout()[pri:4, instance:testSauceDemo.TestValidCompleteFlow@46944ca9]" started-at="2022-11-16T14:25:19 IST" name="Checkout" finished-at="2022-11-16T14:25:20 IST" duration-ms="1175" status="PASS">
+        <test-method signature="Checkout()[pri:4, instance:testSauceDemo.TestValidCompleteFlow@e54303]" started-at="2022-11-16T18:29:02 IST" name="Checkout" finished-at="2022-11-16T18:29:03 IST" duration-ms="1298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Checkout -->
-        <test-method signature="completeCheckout()[pri:5, instance:testSauceDemo.TestValidCompleteFlow@46944ca9]" started-at="2022-11-16T14:25:20 IST" name="completeCheckout" finished-at="2022-11-16T14:25:22 IST" duration-ms="1271" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=107.0.5304.107)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'IN-39DXTN3', ip: '192.168.225.65', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8849f824631edd33849195d6095cb55c, clickElement {id=f286e860-7f96-4570-91b9-91429e00868b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ANSHUL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59420/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8849f824631edd33849195d6095cb55c)] -> xpath: //a[text()='Logout']]
-Session ID: 8849f824631edd33849195d6095cb55c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=107.0.5304.107)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'IN-39DXTN3', ip: '192.168.225.65', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8849f824631edd33849195d6095cb55c, clickElement {id=f286e860-7f96-4570-91b9-91429e00868b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ANSHUL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59420/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8849f824631edd33849195d6095cb55c)] -> xpath: //a[text()='Logout']]
-Session ID: 8849f824631edd33849195d6095cb55c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at pagefiles_SauceDemo.CompleteCheckout.Logout(CompleteCheckout.java:44)
-at testSauceDemo.TestValidCompleteFlow.completeCheckout(TestValidCompleteFlow.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="completeCheckout()[pri:5, instance:testSauceDemo.TestValidCompleteFlow@e54303]" started-at="2022-11-16T18:29:03 IST" name="completeCheckout" finished-at="2022-11-16T18:29:05 IST" duration-ms="1479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- completeCheckout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.TestValidCompleteFlow@46944ca9]" started-at="2022-11-16T14:25:22 IST" name="tearDown" finished-at="2022-11-16T14:25:22 IST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.TestValidCompleteFlow@e54303]" started-at="2022-11-16T18:29:05 IST" name="tearDown" finished-at="2022-11-16T18:29:05 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testSauceDemo.TestValidCompleteFlow -->
       <class name="testSauceDemo.locked_out_user">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.locked_out_user@a22cb6a]" started-at="2022-11-16T14:24:51 IST" name="Setup" finished-at="2022-11-16T14:24:52 IST" duration-ms="869" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.locked_out_user@46944ca9]" started-at="2022-11-16T18:28:34 IST" name="Setup" finished-at="2022-11-16T18:28:35 IST" duration-ms="924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login_locked_User()[pri:1, instance:testSauceDemo.locked_out_user@a22cb6a]" started-at="2022-11-16T14:24:52 IST" name="login_locked_User" finished-at="2022-11-16T14:24:59 IST" duration-ms="6983" status="PASS">
+        <test-method signature="login_locked_User()[pri:1, instance:testSauceDemo.locked_out_user@46944ca9]" started-at="2022-11-16T18:28:35 IST" name="login_locked_User" finished-at="2022-11-16T18:28:42 IST" duration-ms="7110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_locked_User -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.locked_out_user@a22cb6a]" started-at="2022-11-16T14:24:59 IST" name="tearDown" finished-at="2022-11-16T14:24:59 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.locked_out_user@46944ca9]" started-at="2022-11-16T18:28:42 IST" name="tearDown" finished-at="2022-11-16T18:28:42 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

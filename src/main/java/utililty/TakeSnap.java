@@ -7,7 +7,9 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-public class TakeSnap extends ReusableBrowser  {
+import testBase.testBase;
+
+public class TakeSnap extends testBase  {
 	
 	
 	public static String capturescreen(String name) throws Exception

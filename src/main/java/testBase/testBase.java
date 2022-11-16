@@ -1,9 +1,11 @@
 package testBase;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
-public class testBase {
+public class testBase extends ListenerTest {
 	
 	protected static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
 	
@@ -13,7 +15,9 @@ public class testBase {
     public void Setup() throws Exception{
 		WebDriver webdriver = BrowserSetup.initDriver();
 		threadLocalDriver.set(webdriver);
-		
+		getDriver().manage().window().maximize();
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 	}
 	 //get thread-safe driver
     public static WebDriver getDriver(){
