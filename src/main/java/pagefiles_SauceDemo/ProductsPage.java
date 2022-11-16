@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import base.BaseClass;
+import testBase.testBase;
 
-public class ProductsPage extends BaseClass {
+public class ProductsPage extends testBase {
 
 	@FindBy(xpath="//img[@alt='Sauce Labs Backpack']")
 	private WebElement Backpack;
@@ -23,7 +23,7 @@ public class ProductsPage extends BaseClass {
 	
 	public ProductsPage() throws Exception {
 
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(getDriver(),this);
 	}
 
 	

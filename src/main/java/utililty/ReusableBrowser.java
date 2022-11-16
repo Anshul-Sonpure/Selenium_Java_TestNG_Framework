@@ -1,5 +1,7 @@
 package utililty;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -8,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ReusableBrowser {
 	
-		public static WebDriver driver;
+		public static WebDriver driver = null;
 
 		
 		public static WebDriver getDriver() throws Exception
@@ -22,14 +24,23 @@ public class ReusableBrowser {
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
+				driver.manage().window().maximize();
+		        driver.manage().timeouts().implicitlyWait((Duration.ofSeconds(5)));
+		        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 				break;
 			case "firefox":
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
+				driver.manage().window().maximize();
+		        driver.manage().timeouts().implicitlyWait((Duration.ofSeconds(5)));
+		        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 				break;
 			case "IE":
 				WebDriverManager.iedriver().setup();
 				driver = new InternetExplorerDriver();
+				driver.manage().window().maximize();
+		        driver.manage().timeouts().implicitlyWait((Duration.ofSeconds(5)));
+		        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 				break;
 			default:
 				System.out.println(browser+" Didn't matched any browser specified in properties file");
@@ -45,5 +56,4 @@ public class ReusableBrowser {
 			return driver;
 		}
 	
-	
-	}
+}

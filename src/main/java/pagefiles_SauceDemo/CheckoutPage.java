@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import base.BaseClass;
+import testBase.testBase;
 
-public class CheckoutPage extends BaseClass {
+public class CheckoutPage extends testBase {
 
 	@FindBy(xpath="//button[@id='finish']")
 	private WebElement finish;
@@ -22,7 +22,7 @@ public class CheckoutPage extends BaseClass {
 	public CheckoutPage() throws Exception
 	{
 		
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(getDriver(),this);
 	}
 	
 	public void clickFinish() {
@@ -38,7 +38,7 @@ public class CheckoutPage extends BaseClass {
 	}
 	public void ScrollTotal()
 	{
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", Sauce_Card);
 	}
 }

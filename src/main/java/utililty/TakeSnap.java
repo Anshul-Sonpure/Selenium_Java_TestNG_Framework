@@ -10,9 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 public class TakeSnap extends ReusableBrowser  {
 	
 	
-	public static String capturescreen(String name)
+	public static String capturescreen(String name) throws Exception
 	{
-		TakesScreenshot takescreenshot = (TakesScreenshot) driver;
+		TakesScreenshot takescreenshot = (TakesScreenshot) getDriver();
 		File src = takescreenshot.getScreenshotAs(OutputType.FILE);
         File destination = new File("Screenshot/"+name);
         try {

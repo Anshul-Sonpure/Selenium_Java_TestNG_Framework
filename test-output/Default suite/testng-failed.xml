@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSauceDemo.demo">
+      <class name="testSauceDemo.TestValidCompleteFlow">
         <methods>
-          <include name="search"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+          <include name="completeCheckout"/>
         </methods>
-      </class> <!-- testSauceDemo.demo -->
+      </class> <!-- testSauceDemo.TestValidCompleteFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

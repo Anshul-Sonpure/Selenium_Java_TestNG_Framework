@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import base.BaseClass;
+import testBase.testBase;
 
-public class CompleteCheckout extends BaseClass {
+public class CompleteCheckout extends testBase {
 	
 	@FindBy(xpath="//h2[text()='THANK YOU FOR YOUR ORDER']")
 	private WebElement thankyou;
@@ -24,7 +24,7 @@ public class CompleteCheckout extends BaseClass {
 	
 	public CompleteCheckout() throws Exception {
 
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(getDriver(),this);
 	}
 	
 	public  void ValidateCheckout()
@@ -33,7 +33,7 @@ public class CompleteCheckout extends BaseClass {
 		String thanks="THANK YOU FOR YOUR ORDER";
 		Assert.assertEquals(checkout,Checkout.getText());
 		Assert.assertEquals(thanks,thankyou.getText());
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", Checkout);
 	}
 	

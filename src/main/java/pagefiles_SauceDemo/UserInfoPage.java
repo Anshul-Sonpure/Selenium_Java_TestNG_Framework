@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import base.BaseClass;
+import testBase.testBase;
 
-public class UserInfoPage extends BaseClass {
+public class UserInfoPage extends testBase {
 
 	@FindBy(xpath = "//input[@id='first-name']")
 	private WebElement firstname;
@@ -24,7 +24,7 @@ public class UserInfoPage extends BaseClass {
 	public UserInfoPage() throws Exception
 	{
 		
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(getDriver(),this);
 	}
 	
 	

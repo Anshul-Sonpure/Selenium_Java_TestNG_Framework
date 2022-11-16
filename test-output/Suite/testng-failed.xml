@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="testBase.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="TestSauceLabs(failed)">
     <classes>
-      <class name="testSauceDemo.TestInValidLogin">
+      <class name="testSauceDemo.TestValidCompleteFlow">
         <methods>
-          <include name="teardown"/>
-          <include name="addProductToCart"/>
-          <include name="DriverQuit"/>
-          <include name="addscreenshot"/>
-          <include name="Initialise_ExtentReport"/>
-          <include name="initBrowser"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+          <include name="completeCheckout"/>
         </methods>
-      </class> <!-- testSauceDemo.TestInValidLogin -->
+      </class> <!-- testSauceDemo.TestValidCompleteFlow -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestSauceLabs(failed) -->
 </suite> <!-- Failed suite [Suite] -->
