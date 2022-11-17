@@ -12,7 +12,7 @@ public class login_ProblemUser extends testBase
     @Test(priority = 1)
     public void login_Problem_User() throws Exception
     { 
-        testBase.getDriver().get(ReadProperties.getData("saucedemo"));
+        
       
         LoginPage loginpage = new LoginPage();
         test.get().info("Navigated to Url");

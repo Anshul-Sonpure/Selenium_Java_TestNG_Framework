@@ -12,7 +12,7 @@ public class locked_out_user extends testBase {
     @Test(priority = 1)
     public void login_locked_User() throws Exception
     { 
-        getDriver().get(ReadProperties.getData("saucedemo"));
+        
         LoginPage loginpage = new LoginPage();
         test.get().info("Navigated to Url");
         Thread.sleep(2000);

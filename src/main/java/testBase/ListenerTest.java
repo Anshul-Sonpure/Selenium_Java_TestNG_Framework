@@ -22,8 +22,10 @@ public class ListenerTest implements ITestListener  {
     @Override
     public void onTestStart(ITestResult result) {
        
-         extentTest = extent.createTest(result.getName())
-                .assignAuthor(System.getProperty("user.name"));
+        String classname = result.getTestClass().getName();
+        classname=classname.replace("testSauceDemo.","");
+         extentTest = extent.createTest(classname)
+                 .assignAuthor(System.getProperty("user.name"));
          test.set(extentTest);
     }
 

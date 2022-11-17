@@ -16,7 +16,7 @@ public class TestValidCompleteFlow extends testBase{
 	@Test(priority = 1)
 	public void validloginpage() throws Exception
 	{ 
-	    testBase.getDriver().get(ReadProperties.getData("saucedemo"));
+	    
 		LoginPage loginpage = new LoginPage();
 		test.get().info("Navigated to Url");
 		Thread.sleep(2000);
