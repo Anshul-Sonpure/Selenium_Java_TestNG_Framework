@@ -11,6 +11,7 @@ import utililty.ReadProperties;
 public class BrowserSetup {
 	public static WebDriver driver = null;
 	
+	
 	public static WebDriver initDriver() throws Exception
 	{
 		String browser =ReadProperties.getData("browser");

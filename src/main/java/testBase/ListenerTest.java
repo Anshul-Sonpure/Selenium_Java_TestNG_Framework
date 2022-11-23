@@ -25,6 +25,7 @@ public class ListenerTest implements ITestListener  {
         String classname = result.getTestClass().getName();
         classname=classname.replace("testSauceDemo.","");
          extentTest = extent.createTest(classname)
+                 .createNode(result.getMethod().getMethodName())
                  .assignAuthor(System.getProperty("user.name"));
          test.set(extentTest);
     }
