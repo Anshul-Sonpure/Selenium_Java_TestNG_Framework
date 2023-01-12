@@ -18,9 +18,9 @@ public class ExtentSetup {
 	    	 extent = new ExtentReports();
 	         spark = new ExtentSparkReporter("test-output/Reports/extentreport_" + timeStamp + ".html");
 	         extent.attachReporter(spark);
-	         extent.setSystemInfo("OS", System.getProperty("os.name"));
+	         extent.setSystemInfo("Operating System", System.getProperty("os.name"));
 	         extent.setSystemInfo("JVM", System.getProperty("java.runtime.version"));
-	         extent.setSystemInfo("UserDirectory", System.getProperty("user.dir"));
+	         extent.setSystemInfo("User Directory", System.getProperty("user.dir"));
 	         extent.setSystemInfo("User", System.getProperty("user.name"));
 	         return extent;
 	    	
