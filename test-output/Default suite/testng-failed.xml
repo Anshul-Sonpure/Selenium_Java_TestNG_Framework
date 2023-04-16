@@ -5,8 +5,8 @@
     <classes>
       <class name="testSauceDemo.TC1">
         <methods>
-          <include name="tearDown"/>
           <include name="Setup"/>
+          <include name="tearDown"/>
           <include name="Test1"/>
         </methods>
       </class> <!-- testSauceDemo.TC1 -->

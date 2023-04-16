@@ -19,6 +19,7 @@ public class ListenerTest implements ITestListener  {
     public static ExtentTest extentTest;
     public static String timeStamp = new SimpleDateFormat("dd-MM-yyyy-HH_mm_ss").format(new Date());
     public static String screenshot;
+    
     @Override
     public void onTestStart(ITestResult result) {
        

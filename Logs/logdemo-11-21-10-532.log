@@ -1,0 +1,8 @@
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 4137680896 bytes (maybe)
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\ANSHUL~1\AppData\Local\Temp (java.io.tmpdir)
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available

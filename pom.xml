@@ -62,11 +62,5 @@
 			<version>2.19.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.epam.healenium</groupId>
-			<artifactId>healenium-web</artifactId>
-			<version>3.3.0</version>
-		</dependency>
-
 	</dependencies>
 </project>

@@ -1,0 +1,8 @@
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@70035c8b
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 17
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+11:21:10[TestNG-test=TestSauceLabs-1] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available

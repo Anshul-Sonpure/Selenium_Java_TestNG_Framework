@@ -2,6 +2,7 @@ package testBase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -9,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utililty.ReadProperties;
 
 public class BrowserSetup {
-	public static WebDriver driver = null;
+	public static  WebDriver driver = null;
 	
 	
 	public static WebDriver initDriver() throws Exception
@@ -17,11 +18,15 @@ public class BrowserSetup {
 		String browser =ReadProperties.getData("browser");
 		System.out.println("Browser initialized as :"+browser);
 		
-		if(browser.equalsIgnoreCase("Chrome"))
+		if(browser.equalsIgnoreCase("Chrome") )
 		{
+		   
 			WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.silentOutput", "true");
-			driver=new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(options);
+			
 			
 		}
 		else if(browser.equalsIgnoreCase("firefox"))
