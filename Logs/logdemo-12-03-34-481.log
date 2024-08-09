@@ -1,7 +1,0 @@
-12:03:34[main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-12:03:34[main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-12:03:34[main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @553f17c
-12:03:34[main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-12:03:34[main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
-12:03:34[main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 4137680896 bytes (maybe)
-12:03:34[main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\ANSHUL~1\AppData\Local\Temp (java.io.tmpdir)

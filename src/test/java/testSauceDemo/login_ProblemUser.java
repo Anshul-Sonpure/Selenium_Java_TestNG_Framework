@@ -3,6 +3,7 @@ package testSauceDemo;
 import org.testng.annotations.Test;
 
 import pagefiles_SauceDemo.LoginPage;
+import testBase.ExtentManager;
 import testBase.testBase;
 import utililty.ReadProperties;
 import utililty.TakeSnap;
@@ -15,20 +16,20 @@ public class login_ProblemUser extends testBase
         
       
         LoginPage loginpage = new LoginPage();
-        test.get().info("Navigated to Url");
+        ExtentManager.getExtentTest().info("Navigated to Url");
         Thread.sleep(2000);
         
         loginpage.sendUsername(ReadProperties.getData("problemuser"));
-        test.get().info("Problem User Username Entered");
+        ExtentManager.getExtentTest().info("Problem User Username Entered");
         Thread.sleep(2000);
        
         loginpage.sendPassword(ReadProperties.getData("Password"));
-        test.get().info("Password Entered");
+        ExtentManager.getExtentTest().info("Password Entered");
         Thread.sleep(2000);
         
         loginpage.Login();
-        test.get().info("Clicked on Login");
-        test.get().addScreenCaptureFromPath(TakeSnap.capturescreen("Login-Problem-User_"+timeStamp+".png"));
+        ExtentManager.getExtentTest().info("Clicked on Login");
+        ExtentManager.getExtentTest().addScreenCaptureFromPath(TakeSnap.capturescreen("Login-Problem-User_"+ExtentManager.timeStamp+".png"));
     }
 }
 

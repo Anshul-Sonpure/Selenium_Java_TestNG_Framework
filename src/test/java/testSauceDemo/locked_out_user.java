@@ -1,6 +1,7 @@
 package testSauceDemo;
 
 import pagefiles_SauceDemo.LoginPage;
+import testBase.ExtentManager;
 import testBase.testBase;
 import utililty.ReadProperties;
 import utililty.TakeSnap;
@@ -14,17 +15,17 @@ public class locked_out_user extends testBase {
     { 
         
         LoginPage loginpage = new LoginPage();
-        test.get().info("Navigated to Url");
+        ExtentManager.getExtentTest().info("Navigated to Url");
         Thread.sleep(2000);
         loginpage.sendUsername(ReadProperties.getData("lockeduser"));
-        test.get().info("Locked Out Username Entered");
+        ExtentManager.getExtentTest().info("Locked Out Username Entered");
         Thread.sleep(2000);
         loginpage.sendPassword(ReadProperties.getData("Password"));
-        test.get().info("Password Entered");
+        ExtentManager.getExtentTest().info("Password Entered");
         Thread.sleep(2000);
         loginpage.Login();
-        test.get().info("Clicked on Login");
-        test.get().addScreenCaptureFromPath(TakeSnap.capturescreen("Login-Locked-User_"+timeStamp+".png"));
+        ExtentManager.getExtentTest().info("Clicked on Login");
+        ExtentManager.getExtentTest().addScreenCaptureFromPath(TakeSnap.capturescreen("Login-Locked-User_"+ExtentManager.timeStamp+".png"));
         
         
       

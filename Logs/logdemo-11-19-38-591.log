@@ -1,9 +1,0 @@
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-11:19:38[TestNG-test=TestSauceLabs-1] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256

@@ -6,6 +6,7 @@ import pagefiles_SauceDemo.CompleteCheckout;
 import pagefiles_SauceDemo.LoginPage;
 import pagefiles_SauceDemo.ProductsPage;
 import pagefiles_SauceDemo.UserInfoPage;
+import testBase.ExtentManager;
 import testBase.testBase;
 import utililty.*;
 
@@ -18,39 +19,39 @@ public class TestValidCompleteFlow extends testBase{
 	{ 
 	    
 		LoginPage loginpage = new LoginPage();
-		test.get().info("Navigated to Url");
+		ExtentManager.getExtentTest().info("Navigated to Url");
 		Thread.sleep(2000);
 		
 		loginpage.sendUsername(ReadProperties.getData("UserName"));
 		Thread.sleep(2000);
-		test.get().info("Standard User Username Entered");
+		ExtentManager.getExtentTest().info("Standard User Username Entered");
 		loginpage.sendPassword(ReadProperties.getData("Password"));
 		
 		Thread.sleep(2000);
-		test.get().info("Password Entered");
+		ExtentManager.getExtentTest().info("Password Entered");
 		loginpage.Login();
-		test.get().info("Clicked Login");
+		ExtentManager.getExtentTest().info("Clicked Login");
 	}
 	
 	@Test(priority = 2)
 	public void addProductToCart() throws Exception {
 	ProductsPage Prdpage = new ProductsPage();
-	test.get().info("Navigated to Product Page");
+	ExtentManager.getExtentTest().info("Navigated to Product Page");
 	Thread.sleep(2000);
 	Prdpage.clickBackpack();
 	
 	Thread.sleep(2000);
-	test.get().info("Selected BackPack");
+	ExtentManager.getExtentTest().info("Selected BackPack");
 	Prdpage.clickAdd_to_Cart();
 	
 	Thread.sleep(2000);
-	test.get().info("BackPack Added to Cart");
-	test.get().addScreenCaptureFromPath(TakeSnap.capturescreen("BackPack Added to Cart_"+timeStamp+".png"));
+	ExtentManager.getExtentTest().info("BackPack Added to Cart");
+	ExtentManager.getExtentTest().addScreenCaptureFromPath(TakeSnap.capturescreen("BackPack Added to Cart_"+ExtentManager.timeStamp+".png"));
 	Prdpage.clickShopping_cart_link();
-	test.get().info("Clicked on Cart");
+	ExtentManager.getExtentTest().info("Clicked on Cart");
 	Thread.sleep(2000);
 	Prdpage.clickCheckout();
-	test.get().info("Clicked Checkout");
+	ExtentManager.getExtentTest().info("Clicked Checkout");
 
 }
 
@@ -59,20 +60,20 @@ public class TestValidCompleteFlow extends testBase{
 	{
 	   
 		UserInfoPage uip = new UserInfoPage();
-		test.get().info("Navigated to User Info Page");
+		ExtentManager.getExtentTest().info("Navigated to User Info Page");
 		
 		uip.sendFirstName(ReadProperties.getData("firstname"));
 		Thread.sleep(2000);
-		test.get().info("Entered First Name");
+		ExtentManager.getExtentTest().info("Entered First Name");
 		uip.sendLastName(ReadProperties.getData("lastname"));
 		Thread.sleep(2000);
-		test.get().info("Entered Last Name");
+		ExtentManager.getExtentTest().info("Entered Last Name");
 		uip.sendPostCode(ReadProperties.getData("postalcode"));
 		Thread.sleep(2000);
-		test.get().info("Entered Postal Code");
-		test.get().addScreenCaptureFromPath(TakeSnap.capturescreen("UserDetails_"+timeStamp+".png"));
+		ExtentManager.getExtentTest().info("Entered Postal Code");
+		ExtentManager.getExtentTest().addScreenCaptureFromPath(TakeSnap.capturescreen("UserDetails_"+ExtentManager.timeStamp+".png"));
 		uip.clickContinue();
-		test.get().info("Clicked Continue");
+		ExtentManager.getExtentTest().info("Clicked Continue");
 		
 	}
 	
@@ -81,15 +82,15 @@ public class TestValidCompleteFlow extends testBase{
 	{
 	    
 		CheckoutPage chk = new CheckoutPage();
-	    test.get().info("Navigated to Checkout Page");
+	    ExtentManager.getExtentTest().info("Navigated to Checkout Page");
 		chk.ScrollTotal();
 		
 		chk.ValidateTotal();
-		test.get().info("Validated Total");
+		ExtentManager.getExtentTest().info("Validated Total");
 		Thread.sleep(1000);
-		test.get().addScreenCaptureFromPath(TakeSnap.capturescreen("Validated Total_"+timeStamp+".png"));
+		ExtentManager.getExtentTest().addScreenCaptureFromPath(TakeSnap.capturescreen("Validated Total_"+ExtentManager.timeStamp+".png"));
 		chk.clickFinish();
-		test.get().info("Clicked on Finish");
+		ExtentManager.getExtentTest().info("Clicked on Finish");
 		
 	}
 	
@@ -98,13 +99,13 @@ public class TestValidCompleteFlow extends testBase{
 	{
 		
 		CompleteCheckout compchk = new CompleteCheckout();
-		test.get().info("Navigated to Checkout Complete");
+		ExtentManager.getExtentTest().info("Navigated to Checkout Complete");
 		compchk.ValidateCheckout();
-		test.get().info("Validated Checkout Message");
-		test.get().addScreenCaptureFromPath(TakeSnap.capturescreen("Validated Checkout_"+timeStamp+".png"));
+		ExtentManager.getExtentTest().info("Validated Checkout Message");
+		ExtentManager.getExtentTest().addScreenCaptureFromPath(TakeSnap.capturescreen("Validated Checkout_"+ExtentManager.timeStamp+".png"));
 		Thread.sleep(1000);
 		compchk.Logout();
-		test.get().info("Logout Successfully");
+		ExtentManager.getExtentTest().info("Logout Successfully");
 	
 	}
 }

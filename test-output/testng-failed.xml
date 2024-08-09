@@ -8,7 +8,6 @@
     <classes>
       <class name="testSauceDemo.TestValidCompleteFlow">
         <methods>
-          <include name="Checkout"/>
           <include name="tearDown"/>
           <include name="Setup"/>
           <include name="completeCheckout"/>

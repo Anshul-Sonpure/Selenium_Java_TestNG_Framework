@@ -1,72 +1,84 @@
 package testBase;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import utililty.TakeSnap;
 
 public class ListenerTest implements ITestListener  {
-    public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
-    public static ExtentReports extent = ExtentSetup.initExtent();
-    public static ExtentTest extentTest;
-    public static String timeStamp = new SimpleDateFormat("dd-MM-yyyy-HH_mm_ss").format(new Date());
-    public static String screenshot;
     
+    public static String screenshot;
+    public static Logger logger = LogManager.getLogger("applog");
+    String classname;
     @Override
     public void onTestStart(ITestResult result) {
        
-        String classname = result.getTestClass().getName();
+        classname = result.getTestClass().getName();
         classname=classname.replace("testSauceDemo.","");
-         extentTest = extent.createTest(classname)
-                 .createNode(result.getMethod().getMethodName())
-                 .assignAuthor(System.getProperty("user.name"));
-         test.set(extentTest);
+        
+        ExtentTest test = ExtentManager.getExtentReports().createTest(classname)
+                .createNode(result.getMethod().getMethodName())
+                .assignAuthor(System.getProperty("user.name"));
+        ExtentManager.setExtentTest(test);
+        logger.log(Level.INFO, "Starting "+ classname); 
+        
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        test.get().log(Status.PASS,"Test Case: "+result.getMethod().getMethodName()+ " is passed.");
+        ExtentManager.getExtentTest().log(Status.PASS,"Test Case: "+result.getMethod().getMethodName()+ "Test Passed");
+        
+        logger.log(Level.INFO, "Test Successed");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        test.get().fail(result.getThrowable());
-        test.get().log(Status.FAIL,"Test Case: "+result.getMethod().getMethodName()+ " is failed.");
+        ExtentManager.getExtentTest().fail(result.getThrowable());
+        ExtentManager.getExtentTest().log(Status.PASS,"Test Case: "+result.getMethod().getMethodName()+ "Test Failed");
         
         try {
-            screenshot = TakeSnap.capturescreen("Test_Failed_"+timeStamp+".png");
+            screenshot = TakeSnap.capturescreen("Test_Failed_"+ExtentManager.timeStamp+".png");
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+            logger.error("An Error occurred",e);
         }
-        test.get().addScreenCaptureFromPath(screenshot);
+        ExtentManager.getExtentTest().addScreenCaptureFromPath(screenshot);
+        
+        logger.log(Level.INFO, "Test Failed");
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        test.get().skip(result.getThrowable());
-        test.get().log(Status.SKIP,"Test Case: "+result.getMethod().getMethodName()+ " is skipped.");
+        ExtentManager.getExtentTest().skip(result.getThrowable());
+        ExtentManager.getExtentTest().log(Status.SKIP,"Test Case: "+result.getMethod().getMethodName()+ " is skipped.");
         try {
-            screenshot = TakeSnap.capturescreen("Test_Skipped_"+timeStamp+".png");
+            screenshot = TakeSnap.capturescreen("Test_Skipped_"+ExtentManager.timeStamp+".png");
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+            logger.error("An Error occurred",e);
         }
-        test.get().addScreenCaptureFromPath(screenshot);
+        ExtentManager.getExtentTest().addScreenCaptureFromPath(screenshot);
+        
+        logger.log(Level.INFO, "Test Skipped");
+        
     }
 
 
     @Override
     public void onFinish(ITestContext context) {
-        extent.flush();
+        ExtentManager.getExtentReports().flush();
+        // Clean up ThreadLocal instances
+        ExtentManager.removeExtentTest();
+        logger.log(Level.INFO, "Test Finished");
     }
     
     
