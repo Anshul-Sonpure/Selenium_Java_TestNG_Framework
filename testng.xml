@@ -4,7 +4,7 @@
   <listeners>
         <listener class-name="testBase.ListenerTest"/>
     </listeners>
-  <test thread-count="2" name="TestSauceLabs" parallel="classes">
+  <test thread-count="4" name="TestSauceLabs" parallel="classes">
     <classes>
       <class name="testSauceDemo.locked_out_user"/>
       <class name="testSauceDemo.login_ProblemUser"/>

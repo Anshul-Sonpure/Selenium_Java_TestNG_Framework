@@ -1,57 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-09T23:44:02 IST" name="Suite" finished-at="2024-08-09T23:44:44 IST" duration-ms="41188">
+  <suite started-at="2024-08-23T22:57:02 IST" name="Suite" finished-at="2024-08-23T22:58:00 IST" duration-ms="58754">
     <groups>
     </groups>
-    <test started-at="2024-08-09T23:44:02 IST" name="TestSauceLabs" finished-at="2024-08-09T23:44:44 IST" duration-ms="41188">
+    <test started-at="2024-08-23T22:57:02 IST" name="TestSauceLabs" finished-at="2024-08-23T22:58:00 IST" duration-ms="58754">
       <class name="testSauceDemo.login_ProblemUser">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.login_ProblemUser@14dda234]" started-at="2024-08-09T23:44:02 IST" name="Setup" finished-at="2024-08-09T23:44:09 IST" duration-ms="6717" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.login_ProblemUser@14dda234]" started-at="2024-08-23T22:57:02 IST" name="Setup" finished-at="2024-08-23T22:57:42 IST" duration-ms="39987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.login_ProblemUser@14dda234]" started-at="2024-08-09T23:44:15 IST" name="tearDown" finished-at="2024-08-09T23:44:15 IST" duration-ms="0" status="PASS">
+        <test-method signature="login_Problem_User()[pri:1, instance:testSauceDemo.login_ProblemUser@14dda234]" started-at="2024-08-23T22:57:42 IST" name="login_Problem_User" finished-at="2024-08-23T22:57:49 IST" duration-ms="6994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_Problem_User -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.login_ProblemUser@14dda234]" started-at="2024-08-23T22:57:49 IST" name="tearDown" finished-at="2024-08-23T22:57:49 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testSauceDemo.login_ProblemUser -->
       <class name="testSauceDemo.performance_glitch_user">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.performance_glitch_user@74a6a609]" started-at="2024-08-09T23:44:02 IST" name="Setup" finished-at="2024-08-09T23:44:08 IST" duration-ms="5037" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.performance_glitch_user@74a6a609]" started-at="2024-08-23T22:57:02 IST" name="Setup" finished-at="2024-08-23T22:57:36 IST" duration-ms="34816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login_glitch_User()[pri:1, instance:testSauceDemo.performance_glitch_user@74a6a609]" started-at="2024-08-09T23:44:08 IST" name="login_glitch_User" finished-at="2024-08-09T23:44:15 IST" duration-ms="7053" status="PASS">
+        <test-method signature="login_glitch_User()[pri:1, instance:testSauceDemo.performance_glitch_user@74a6a609]" started-at="2024-08-23T22:57:36 IST" name="login_glitch_User" finished-at="2024-08-23T22:57:48 IST" duration-ms="12041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_glitch_User -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.performance_glitch_user@74a6a609]" started-at="2024-08-09T23:44:15 IST" name="tearDown" finished-at="2024-08-09T23:44:15 IST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.performance_glitch_user@74a6a609]" started-at="2024-08-23T22:57:48 IST" name="tearDown" finished-at="2024-08-23T22:57:49 IST" duration-ms="436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testSauceDemo.performance_glitch_user -->
       <class name="testSauceDemo.TestValidCompleteFlow">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-09T23:44:15 IST" name="Setup" finished-at="2024-08-09T23:44:20 IST" duration-ms="4273" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-23T22:57:02 IST" name="Setup" finished-at="2024-08-23T22:57:37 IST" duration-ms="35135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="validloginpage()[pri:1, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-09T23:44:20 IST" name="validloginpage" finished-at="2024-08-09T23:44:27 IST" duration-ms="6749" status="PASS">
+        <test-method signature="validloginpage()[pri:1, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-23T22:57:37 IST" name="validloginpage" finished-at="2024-08-23T22:57:43 IST" duration-ms="6436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validloginpage -->
-        <test-method signature="addProductToCart()[pri:2, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-09T23:44:27 IST" name="addProductToCart" finished-at="2024-08-09T23:44:35 IST" duration-ms="8683" status="PASS">
+        <test-method signature="addProductToCart()[pri:2, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-23T22:57:43 IST" name="addProductToCart" finished-at="2024-08-23T22:57:52 IST" duration-ms="8773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method signature="enterUserInfo()[pri:3, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-09T23:44:35 IST" name="enterUserInfo" finished-at="2024-08-09T23:44:42 IST" duration-ms="6594" status="PASS">
+        <test-method signature="enterUserInfo()[pri:3, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-23T22:57:52 IST" name="enterUserInfo" finished-at="2024-08-23T22:57:59 IST" duration-ms="6614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterUserInfo -->
-        <test-method signature="Checkout()[pri:4, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-09T23:44:42 IST" name="Checkout" finished-at="2024-08-09T23:44:43 IST" duration-ms="1346" status="PASS">
+        <test-method signature="Checkout()[pri:4, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-23T22:57:59 IST" name="Checkout" finished-at="2024-08-23T22:58:00 IST" duration-ms="1292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Checkout -->
-        <test-method signature="completeCheckout()[pri:5, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-09T23:44:43 IST" name="completeCheckout" finished-at="2024-08-09T23:44:43 IST" duration-ms="62" status="FAIL">
+        <test-method signature="completeCheckout()[pri:5, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-23T22:58:00 IST" name="completeCheckout" finished-at="2024-08-23T22:58:00 IST" duration-ms="41" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Checkout: Complete!] but found [CHECKOUT: COMPLETE!]]]>
@@ -85,21 +89,21 @@ at java.base/java.lang.Thread.run(Thread.java:1623)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- completeCheckout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-09T23:44:43 IST" name="tearDown" finished-at="2024-08-09T23:44:44 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.TestValidCompleteFlow@3f390d63]" started-at="2024-08-23T22:58:00 IST" name="tearDown" finished-at="2024-08-23T22:58:00 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testSauceDemo.TestValidCompleteFlow -->
       <class name="testSauceDemo.locked_out_user">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.locked_out_user@2371aaca]" started-at="2024-08-09T23:44:15 IST" name="Setup" finished-at="2024-08-09T23:44:21 IST" duration-ms="6018" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testSauceDemo.locked_out_user@2371aaca]" started-at="2024-08-23T22:57:02 IST" name="Setup" finished-at="2024-08-23T22:57:35 IST" duration-ms="33729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login_locked_User()[pri:1, instance:testSauceDemo.locked_out_user@2371aaca]" started-at="2024-08-09T23:44:21 IST" name="login_locked_User" finished-at="2024-08-09T23:44:27 IST" duration-ms="6586" status="PASS">
+        <test-method signature="login_locked_User()[pri:1, instance:testSauceDemo.locked_out_user@2371aaca]" started-at="2024-08-23T22:57:35 IST" name="login_locked_User" finished-at="2024-08-23T22:57:43 IST" duration-ms="7370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_locked_User -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.locked_out_user@2371aaca]" started-at="2024-08-09T23:44:27 IST" name="tearDown" finished-at="2024-08-09T23:44:28 IST" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSauceDemo.locked_out_user@2371aaca]" started-at="2024-08-23T22:57:43 IST" name="tearDown" finished-at="2024-08-23T22:57:43 IST" duration-ms="310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

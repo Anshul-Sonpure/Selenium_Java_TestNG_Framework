@@ -1,5 +1,7 @@
 package testBase;
 
+import java.io.IOException;
+
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -8,6 +10,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
 import utililty.TakeSnap;
@@ -28,6 +31,7 @@ public class ListenerTest implements ITestListener  {
                 .assignAuthor(System.getProperty("user.name"));
         ExtentManager.setExtentTest(test);
         logger.log(Level.INFO, "Starting "+ classname); 
+       
         
     }
 
@@ -41,35 +45,42 @@ public class ListenerTest implements ITestListener  {
     @Override
     public void onTestFailure(ITestResult result) {
         ExtentManager.getExtentTest().fail(result.getThrowable());
-        ExtentManager.getExtentTest().log(Status.PASS,"Test Case: "+result.getMethod().getMethodName()+ "Test Failed");
-        
+        ExtentManager.getExtentTest().log(Status.FAIL, "Test Case: " + result.getMethod().getMethodName() + " Test Failed");
+
+        String screenshotPath = null;
         try {
-            screenshot = TakeSnap.capturescreen("Test_Failed_"+ExtentManager.timeStamp+".png");
+            screenshotPath = TakeSnap.capturescreen("Test_Failed_" + ExtentManager.timeStamp + ".png");
+            
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
-            logger.error("An Error occurred",e);
+            logger.error("An Error occurred while taking screenshot", e);
         }
-        ExtentManager.getExtentTest().addScreenCaptureFromPath(screenshot);
-        
-        logger.log(Level.INFO, "Test Failed");
+
+        if (screenshotPath != null) {
+            ExtentManager.getExtentTest()
+                .fail("Screenshot of the failure", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+        }
     }
+
+
 
     @Override
     public void onTestSkipped(ITestResult result) {
         ExtentManager.getExtentTest().skip(result.getThrowable());
         ExtentManager.getExtentTest().log(Status.SKIP,"Test Case: "+result.getMethod().getMethodName()+ " is skipped.");
+        String screenshotPath = null;
         try {
-            screenshot = TakeSnap.capturescreen("Test_Skipped_"+ExtentManager.timeStamp+".png");
+            screenshotPath = TakeSnap.capturescreen("Test_Skipped_" + ExtentManager.timeStamp + ".png");
+            
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
-            logger.error("An Error occurred",e);
+            logger.error("An Error occurred while taking screenshot", e);
         }
-        ExtentManager.getExtentTest().addScreenCaptureFromPath(screenshot);
-        
-        logger.log(Level.INFO, "Test Skipped");
-        
+
+        if (screenshotPath != null) {
+            ExtentManager.getExtentTest()
+                .fail("Screenshot of the Skipped testcase", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+        }
     }
 
 
